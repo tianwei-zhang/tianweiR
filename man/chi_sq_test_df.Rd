@@ -15,3 +15,6 @@ a matrix with the p-values of the chi-square test. Each column or row represents
 \description{
 Apply chi-square test for any combination of two columns in a data set
 }
+\examples{
+chi_sq_test_df(iris)
+}
