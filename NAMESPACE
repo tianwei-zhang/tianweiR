@@ -3,6 +3,7 @@
 export(Mode)
 export(cap_outlier_iqr)
 export(chi_sq_test_df)
+export(corr_plot)
 export(cv_caret)
 export(cv_lm)
 export(normalize_numeric_2_binary)
