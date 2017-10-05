@@ -8,6 +8,7 @@
 #' @examples 
 #' cap_outlier_IQR(data,c(1,3,4),iqr_threshold=2,zero_min=T)
 #' @export
+#' 
 cap_outlier_iqr=function(data,cols_index,iqr_threshold=1.5,zero_min=F){
   for (i in cols_index){
     
@@ -26,7 +27,7 @@ cap_outlier_iqr=function(data,cols_index,iqr_threshold=1.5,zero_min=F){
     
     # compute row index of outliers
     index_greater_upper=data[,i]>=upper_bound
-    index_lower_lower=data[,i]<=outlier_min
+    index_lower_lower=data[,i]<=lower_bound
     
     # cap outliers
     data[index_greater_upper,i]=upper_bound
